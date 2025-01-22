@@ -48,7 +48,7 @@ const Contact = () => {
   const { isDarkMode } = useTheme();
 
   useEffect(() => {
-    init('mdD7-0Ohq2kUN8xff');
+    init('GQrumJFXDD8pHNhJ-');
   }, []);
 
   const handleChange = (e) => {
@@ -62,7 +62,7 @@ const Contact = () => {
 
     try {
       const templateParams = {
-        to_name: 'Subhankar',
+        to_name: 'Aditya',
         from_name: form.name,
         from_email: form.email,
         message: form.message,
@@ -70,8 +70,8 @@ const Contact = () => {
       };
 
       await send(
-        'service_0jn4pz8',
-        'template_kcvz0rp',
+        'service_l7je1j1',
+        'template_3p3gfjs',
         templateParams
       );
 
