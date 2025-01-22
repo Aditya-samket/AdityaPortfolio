@@ -48,7 +48,7 @@ const Contact = () => {
   const { isDarkMode } = useTheme();
 
   useEffect(() => {
-    init('mdD7-0Ohq2kUN8xff');
+    init('GQrumJFXDD8pHNhJ-');
   }, []);
 
   const handleChange = (e) => {
@@ -62,7 +62,7 @@ const Contact = () => {
 
     try {
       const templateParams = {
-        to_name: 'Subhankar',
+        to_name: 'Aditya',
         from_name: form.name,
         from_email: form.email,
         message: form.message,
@@ -70,8 +70,8 @@ const Contact = () => {
       };
 
       await send(
-        'service_0jn4pz8',
-        'template_kcvz0rp',
+        'service_l7je1j1',
+        'template_3p3gfjs',
         templateParams
       );
 
@@ -100,13 +100,13 @@ const Contact = () => {
     {
       icon: FaMapMarkerAlt,
       title: "Location",
-      content: "Bhubaneswar, India"
+      content: "Bhubaneswar, Odisha, India"
     },
     {
       icon: FaPhone,
       title: "Phone",
-      content: "+91 123-456-7890",
-      link: "tel:+911234567890"
+      content: "+91 966-833-8499",
+      link: "tel:+919668338499"
     }
   ];
 
@@ -115,19 +115,19 @@ const Contact = () => {
       icon: FaLinkedin,
       title: "LinkedIn",
       content: "Connect with me",
-      link: "https://linkedin.com/in/yourusername"
+      link: "https://linkedin.com/in/aditya-prasad-bhoi"
     },
     {
       icon: FaGithub,
       title: "GitHub",
       content: "Check my repos",
-      link: "https://github.com/yourusername"
+      link: "https://github.com/Aditya-samket"
     },
     {
       icon: FaTwitter,
       title: "Twitter",
       content: "Follow me",
-      link: "https://twitter.com/yourusername"
+      link: "https://twitter.com/Aditya242319055"
     }
   ];
 
