@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import { styles } from './styles';
 import { useTheme } from './context/ThemeContext';
 import AdityaPhoto from './assets/Aditya.jpg';
+import AdityaCv from './assets/AdityaPrasad.pdf';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
@@ -15,7 +16,7 @@ const Home = () => {
   const handleDownloadCV = () => {
     // Replace 'your-cv.pdf' with your actual CV file path
     const link = document.createElement('a');
-    link.href = '/AdityaPrasad.pdf';
+    link.href = AdityaCv;                                       
     link.download = 'Aditya Prasad Bhoi-CV.pdf';
     link.click();
   };
@@ -46,7 +47,7 @@ const Home = () => {
               </button>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/YourGithubUsername"
+                  href="https://github.com/Aditya-samket"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`text-3xl ${isDarkMode ? 'text-white' : 'text-gray-900'} hover:text-[#915eff] transition-colors duration-300`}
@@ -54,7 +55,7 @@ const Home = () => {
                   <FaGithub />
                 </a>
                 <a
-                  href="https://linkedin.com/in/YourLinkedInUsername"
+                  href="https://linkedin.com/in/aditya-prasad-bhoi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`text-3xl ${isDarkMode ? 'text-white' : 'text-gray-900'} hover:text-[#915eff] transition-colors duration-300`}
