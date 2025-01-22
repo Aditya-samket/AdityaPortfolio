@@ -25,9 +25,9 @@ const Hero = () => {
   const { isDarkMode } = useTheme();
 
   const socialLinks = [
-    { href: "https://github.com/yourusername", icon: FaGithub },
-    { href: "https://linkedin.com/in/yourusername", icon: FaLinkedin },
-    { href: "https://twitter.com/yourusername", icon: FaTwitter }
+    { href: "https://github.com/aditya-smaket", icon: FaGithub },
+    { href: "https://linkedin.com/in/aditya-prasad-bhoi", icon: FaLinkedin },
+    { href: "https://twitter.com/Aditya242319055", icon: FaTwitter }
   ];
 
   return (
