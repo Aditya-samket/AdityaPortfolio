@@ -212,6 +212,7 @@ const Contact = () => {
               />
             </label>
 
+            <div className="flex justify-center w-full">
             <button
               type="submit"
               disabled={loading}
@@ -221,6 +222,7 @@ const Contact = () => {
             >
               {loading ? 'Sending...' : 'Send Message'}
             </button>
+            </div>
           </form>
         </motion.div>
 
