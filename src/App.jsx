@@ -32,11 +32,10 @@ const Home = () => {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full">
           <div className="lg:w-1/2">
             <h1 className={`${styles.heroHeadText} ${isDarkMode ? 'text-white' : 'text-gray-900'} transition-colors duration-300`}>
-              Hi, I'm <span className="text-[#915eff]">Aditya</span>
+              Hello, I'm <span className="text-[#915eff]">Aditya Prasad Bhoi</span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 ${isDarkMode ? 'text-white-100' : 'text-gray-600'} transition-colors duration-300`}>
-              I develop Android applications, user <br className="sm:block hidden" />
-              interfaces and mobile experiences
+              Passionate Android Developer | Turning Ideas into Intuitive Mobile Applications with a Focus on Seamless User Experience and Performance. <br className="sm:block hidden" />
             </p>
             <div className="mt-8 flex gap-4 items-center">
               <button
@@ -72,16 +71,18 @@ const Home = () => {
             transition={{ duration: 0.5 }}
             className="lg:w-1/2 flex justify-center items-center"
           >
-            <div className="relative w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]">
-              <div className="absolute inset-0 rounded-full bg-[#915eff] opacity-20 blur-2xl animate-pulse" />
+            <div className="relative w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]">
+              {/* Changed from rounded-full to rounded-lg for square with slightly rounded corners */}
+              <div className="absolute inset-0 rounded-lg bg-[#915eff] opacity-25 blur-3xl animate-pulse" />
               <motion.div
                 whileHover={{ scale: 1.02 }}
-                className="relative w-full h-full rounded-full overflow-hidden border-4 border-[#915eff]"
+                transition={{ duration: 0.3 }}
+                className="relative w-full h-full rounded-lg overflow-hidden border-4 border-[#915eff]"
               >
                 <img
                   src={AdityaPhoto}
                   alt="Aditya"
-                  className="w-full h-full object-cover scale-90"
+                  className="w-full h-full object-cover object-center scale-100"
                 />
               </motion.div>
             </div>

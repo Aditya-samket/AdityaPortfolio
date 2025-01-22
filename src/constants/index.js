@@ -78,10 +78,10 @@ export const technologies = [
 export const experiences = [
   {
     title: "Android Developer",
-    company_name: "Company 1",
+    company_name: "Smaket solutions",
     icon: "company1",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "September 2022 -  November 2024",
     points: [
       "Developing and maintaining Android applications using Kotlin and Java.",
       "Implementing responsive design and ensuring cross-device compatibility.",
@@ -90,10 +90,10 @@ export const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Company 2",
+    company_name: "Deeptechgine",
     icon: "company2",
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "December 2024 - Continue",
     points: [
       "Developing and maintaining mobile applications using React Native and related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers.",
@@ -104,7 +104,7 @@ export const experiences = [
 
 export const projects = [
   {
-    name: "Project 1",
+    name: "Smaket POS",
     description:
       "Android application that allows users to...",
     tags: [
@@ -125,7 +125,7 @@ export const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Project 2",
+    name: "No Counter",
     description:
       "React Native application that enables users to...",
     tags: [

@@ -42,9 +42,7 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title 
-                    ? (isDarkMode ? 'text-white' : 'text-primary')
-                    : (isDarkMode ? 'text-secondary' : 'text-gray-600')
+                  active === link.title  ? (isDarkMode ? 'text-white' : 'text-primary') : (isDarkMode ? 'text-secondary' : 'text-gray-600')
                 } hover:${isDarkMode ? 'text-white' : 'text-primary'} text-[18px] font-medium cursor-pointer transition-colors duration-300`}
                 onClick={() => setActive(link.title)}
               >
@@ -57,18 +55,17 @@ const Navbar = () => {
             <img
               src={toggle ? close : menu}
               alt="menu"
-              className="w-[28px] h-[28px] object-contain cursor-pointer"
+              className={`w-[28px] h-[28px] object-contain cursor-pointer ${isDarkMode ? 'invert-0' : 'invert'}`}
               onClick={() => setToggle(!toggle)}
             />
-            <div className={`${!toggle ? 'hidden' : 'flex'} p-6 ${isDarkMode ? 'black-gradient' : 'bg-white shadow-lg'} absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+            <div className={`${!toggle ? 'hidden' : 'flex'} p-6 ${isDarkMode ? 'black-gradient' : 'bg-white shadow-lg' } 
+            absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
               <ul className="list-none flex justify-end items-start flex-col gap-4">
                 {navLinks.map((link) => (
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title 
-                        ? (isDarkMode ? 'text-white' : 'text-primary')
-                        : (isDarkMode ? 'text-secondary' : 'text-gray-600')
+                      active === link.title ? (isDarkMode ? 'text-white' : 'text-primary')  : (isDarkMode ? 'text-secondary' : 'text-gray-600')
                     } font-poppins font-medium cursor-pointer text-[16px] transition-colors duration-300`}
                     onClick={() => {
                       setToggle(!toggle);
